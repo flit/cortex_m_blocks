@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.637081660/PATH/delimiter=\:
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.637081660/PATH/operation=append
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.637081660/PATH/value=/usr/bin\:/bin\:/usr/sbin\:/sbin\:/opt/gcc-arm-none-eabi-4_9-2015q3/bin
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.637081660/append=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.637081660/appendContributed=true
