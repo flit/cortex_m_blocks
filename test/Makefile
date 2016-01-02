@@ -16,11 +16,11 @@ DEFINE += -DCPU_MKL28T512VLL7_CORE0
 INCLUDE += -I/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include \
 			-I$(ROOT)/CMSIS/include \
 			-I$(ROOT)/devices/MKL28T7 \
-			-I$(ROOT)/libclosure
+			-I$(ROOT)/blocksruntime
 
 SOURCES = test.c \
-			$(ROOT)/libclosure/runtime.c \
-			$(ROOT)/libclosure/data.c \
+			$(ROOT)/blocksruntime/runtime.c \
+			$(ROOT)/blocksruntime/data.c \
 			$(ROOT)/devices/MKL28T7/gcc/startup_MKL28T7_CORE0.S \
 			$(ROOT)/devices/MKL28T7/system_MKL28T7_CORE0.c
 
@@ -31,8 +31,10 @@ COBJECTS = $(CSOURCES:.c=.o)
 SOBJECTS = $(SSOURCES:.S=.o)
 OBJECTS = $(COBJECTS) $(SOBJECTS)
 
+.PHONY: all
 all: test.elf
 
+.PHONY: clean
 clean:
 # 	echo $(OBJECTS)
 	rm -f $(OBJECTS)
