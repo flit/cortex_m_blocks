@@ -8,7 +8,7 @@ library in the lib/BlocksRuntime directory. These files have been extracted and 
 the runtime and make it more suitable for small microcontrollers.
 
 There's really nothing in particular that ties the runtime to Cortex-M devices, except the test code.
-It should be usably on any microcontroller architecture supported by Clang.
+It should be usable on any microcontroller architecture supported by Clang.
 
 ### Changes
 
@@ -25,7 +25,7 @@ Further optimizations are possible.
 
 ### Test
 
-The `test` directory contains a simple blocks test program. It builds for the NXP KL28T/Z device. There is a GNU ARM Eclipe project in the root of the repository.
+The `test` directory contains a simple blocks test program. It builds for the NXP KL28T/Z device. There is a GNU ARM Eclipse project in the root of the repository.
 
 
 ### Links
